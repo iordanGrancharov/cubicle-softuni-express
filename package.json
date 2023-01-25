@@ -1,0 +1,28 @@
+{
+  "name": "cubicle-softuni-express",
+  "version": "1.0.0",
+  "description": "express + handlebars",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "SET NODE_ENV=production&& node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iordanGrancharov/cubicle-softuni-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iordanGrancharov/cubicle-softuni-express/issues"
+  },
+  "homepage": "https://github.com/iordanGrancharov/cubicle-softuni-express#readme"
+}
