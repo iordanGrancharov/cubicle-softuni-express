@@ -79,8 +79,11 @@ exports.getHomePage = async (req, res) => {
 };
 
 exports.getDetailsCube = async (req, res) => {
-  const cube = await Cube.findById({ _id: req.params.cubeId }).lean();
+  const cube = await Cube.findById({ _id: req.params.cubeId })
+    .populate("accessories")
+    .lean();
 
+  console.log(cube);
   if (!cube) {
     res.redirect("/404");
   }

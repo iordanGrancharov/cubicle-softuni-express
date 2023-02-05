@@ -25,10 +25,12 @@ const cubeScheme = new Schema({
     min: 1,
     max: 6,
   },
-  accessories: {
-    type: Types.ObjectId,
-    rel: "Accessory",
-  },
+  accessories: [
+    {
+      type: Types.ObjectId,
+      ref: "Accessory",
+    },
+  ],
 });
 
 const Cube = model("Cube", cubeScheme);
